@@ -1,7 +1,7 @@
 " set textwidth for auto wrap
 set textwidth=80
 " enable auto wrap
-set formatoptions+=t
+" set formatoptions+=t
 " I like this colorscheme :)
 colorscheme industry
 
