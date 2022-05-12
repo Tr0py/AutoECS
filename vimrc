@@ -14,3 +14,8 @@ set shiftwidth=4
 set expandtab
 " Set line number
 set nu
+" From YZ's tip: use Enter to cancel highlight after searching
+nnoremap <silent><CR> <Esc>:noh<CR><CR>
+" From YZ's tip: Make tabs and white spaces different
+exec "set listchars=tab:\u2D2\u2D2,trail:\uB7,nbsp:~"
+set list
