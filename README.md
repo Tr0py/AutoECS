@@ -12,6 +12,12 @@ Including:
 ## How to use
 
 ```bash
+sh -c "$(wget https://github.com/Tr0py/AutoECS/blob/master/AutoECS.sh -O -)"
+```
+
+Or
+
+```bash
 git clone https://github.com/Tr0py/AutoECS-Environment-Config-Script.git
 cd AutoECS-Environment-Config-Script
 ./config-all.sh
