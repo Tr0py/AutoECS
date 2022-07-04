@@ -12,7 +12,7 @@ Including:
 ## How to use
 
 ```bash
-sh -c "$(wget https://github.com/Tr0py/AutoECS/blob/master/AutoECS.sh -O -)"
+sh -c "$(wget https://raw.githubusercontent.com/Tr0py/AutoECS/master/AutoECS.sh -O -)"
 ```
 
 Or
