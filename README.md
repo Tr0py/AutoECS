@@ -15,13 +15,5 @@ Including:
 sh -c "$(wget https://raw.githubusercontent.com/Tr0py/AutoECS/master/AutoECS.sh -O -)"
 ```
 
-Or
-
-```bash
-git clone https://github.com/Tr0py/AutoECS-Environment-Config-Script.git
-cd AutoECS-Environment-Config-Script
-./config-all.sh
-```
-
 Enjoy! :)
 
