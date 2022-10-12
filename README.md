@@ -17,3 +17,7 @@ sh -c "$(wget https://raw.githubusercontent.com/Tr0py/AutoECS/master/AutoECS.sh 
 
 Enjoy! :)
 
+
+### Note
+
+I recommond using zsh theme "bira".  You can set it by modifying `~/.zshrc`: `ZSH_THEME="bira"`.
