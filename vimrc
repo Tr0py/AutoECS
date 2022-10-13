@@ -1,5 +1,5 @@
-" set textwidth for auto wrap
-set textwidth=80
+" set textwidth for auto wrap, *only for markdown files*
+au BufRead,BufNewFile *.md setlocal textwidth=80
 " enable auto wrap
 " set formatoptions+=t
 " I like this colorscheme :)
