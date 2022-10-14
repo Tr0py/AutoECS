@@ -1,7 +1,7 @@
 " set textwidth for auto wrap, *only for markdown files*
 au BufRead,BufNewFile *.md setlocal textwidth=80
- autocmd BufRead,BufNewFile *.md setlocal textwidth=80 | setlocal set formatoptions+=t
- autocmd FileType,BufRead,BufNewFile *.c,*.cpp,*.h,*.hpp  setlocal textwidth=80
+autocmd BufRead,BufNewFile *.md setlocal textwidth=80 | setlocal set formatoptions+=t
+autocmd FileType,BufRead,BufNewFile *.c,*.cpp,*.h,*.hpp  setlocal textwidth=80
          \ | setlocal noexpandtab | setlocal tabstop=8
          \ | setlocal shiftwidth=8
          \ | setlocal formatoptions+=t
