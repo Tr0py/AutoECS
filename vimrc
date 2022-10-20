@@ -1,6 +1,6 @@
 set textwidth=80
 " Auto wrap comments
-set formatoptions+=croaq
+set formatoptions+=c
 " Disable auto wrap code and enable it only for certain files
 set formatoptions-=t
 set noexpandtab
