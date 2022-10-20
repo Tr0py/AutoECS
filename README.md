@@ -20,8 +20,9 @@ Enjoy! :)
 
 ### Note
 
-I recommond using zsh theme "steeef".  You can set it by modifying `~/.zshrc`: `ZSH_THEME="steeef"`.
+I recommond using zsh theme "dst".  You can set it by modifying `~/.zshrc`: `ZSH_THEME="dst"`.
 That's because steeef: 
 1. Has enough information printed: username @ hostname, pwd, git. eg. `ziyi at prec-c in ~/git/COMP580 (master)`
 2. Has bash symbol: `#` or `$` in a separate line.
 3. Not too fancy. Doesn't need special fonts. 
+4. Has a system time displayer.  Helps you track when and what you did before.
