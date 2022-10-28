@@ -17,7 +17,18 @@ autocmd FileType,BufRead,BufNewFile *.c,*.cpp,*.h,*.hpp setlocal tabstop=8
 colorscheme industry
 
 " From YZ's tip: use Enter to cancel highlight after searching
-" nnoremap <silent><CR> <Esc>:noh<CR><CR>
+set hlsearch
+nnoremap <silent><CR> <Esc>:noh<CR><CR>
 " From YZ's tip: Make tabs and white spaces different
-exec "set listchars=tab:\u2D2\u2D2,trail:\uB7,nbsp:~"
+set listchars=tab:->\|,trail:·,nbsp:~
 set list
+" test: trailing spaces:       
+" test: trailing tabs:			
+	" test: leading tabs
+		" test: leading tabs
+    " test: leading spaces
+" test:		embedded tabs
+" test: tab length		3	22	111	.
+highlight SpecialKey ctermfg=DarkGrey guifg=DarkGrey
+highlight TrailSpaceColor ctermbg=DarkRed guibg=DarkRed
+match TrailSpaceColor /\s\+$/
