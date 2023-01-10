@@ -19,8 +19,9 @@ colorscheme industry
 " From YZ's tip: use Enter to cancel highlight after searching
 set hlsearch
 nnoremap <silent><CR> <Esc>:noh<CR><CR>
-" From YZ's tip: Make tabs and white spaces different
-set listchars=tab:->\|,trail:·,nbsp:~
+" Display multiple consecutive spaces
+set listchars=tab:\\x20\\x20
+set listchars+=lead:.,trail:.
 set list
 " test: trailing spaces:       
 " test: trailing tabs:			
@@ -29,6 +30,9 @@ set list
     " test: leading spaces
 " test:		embedded tabs
 " test: tab length		3	22	111	.
+" highlight trailing characters
 highlight SpecialKey ctermfg=DarkGrey guifg=DarkGrey
 highlight TrailSpaceColor ctermbg=DarkRed guibg=DarkRed
 match TrailSpaceColor /\s\+$/
+" Uncomment below to display both leading and trailing spaces
+"match TrailSpaceColor /\(^ \+\)\|\(\s\+$\)/
