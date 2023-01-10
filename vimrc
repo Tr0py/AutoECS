@@ -1,4 +1,5 @@
 syntax on
+set encoding=utf-8
 set textwidth=80
 " Auto wrap comments, and <Cr> auto inserts comment header
 set formatoptions=cr
@@ -6,6 +7,7 @@ set formatoptions=cr
 set noexpandtab
 set tabstop=4
 set shiftwidth=4
+set nu
 
 " Enable autowrap for md and C
 autocmd BufRead,BufNewFile *.md setlocal formatoptions+=t
@@ -21,17 +23,19 @@ set hlsearch
 nnoremap <silent><CR> <Esc>:noh<CR><CR>
 " Display multiple consecutive spaces
 set listchars=tab:\\x20\\x20
-set listchars+=lead:.,trail:.
+set listchars+=leadmultispace:\\u2423,trail:\\u2423
+set listchars+=lead:.
 set list
 " test: trailing spaces:       
 " test: trailing tabs:			
 	" test: leading tabs
 		" test: leading tabs
-    " test: leading spaces
+    " test: leading multiple spaces
+	 "test: leading single space
 " test:		embedded tabs
 " test: tab length		3	22	111	.
 " highlight trailing characters
-highlight SpecialKey ctermfg=DarkGrey guifg=DarkGrey
+highlight SpecialKey ctermfg=red  guifg=red
 highlight TrailSpaceColor ctermbg=DarkRed guibg=DarkRed
 match TrailSpaceColor /\s\+$/
 " Uncomment below to display both leading and trailing spaces
