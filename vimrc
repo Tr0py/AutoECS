@@ -12,8 +12,8 @@ set nu
 " Enable autowrap for md and C
 autocmd BufRead,BufNewFile *.md setlocal formatoptions+=t
 autocmd FileType,BufRead,BufNewFile *.c,*.cpp,*.h,*.hpp setlocal tabstop=8
-         \ | setlocal shiftwidth=8
-         \ | setlocal formatoptions+=t
+		\ | setlocal shiftwidth=8
+		\ | setlocal formatoptions+=t
 
 " I like this colorscheme :)
 colorscheme industry
@@ -40,3 +40,10 @@ highlight TrailSpaceColor ctermbg=DarkRed guibg=DarkRed
 match TrailSpaceColor /\s\+$/
 " Uncomment below to display both leading and trailing spaces
 "match TrailSpaceColor /\(^ \+\)\|\(\s\+$\)/
+
+" have Vim jump to the last position when
+" reopening a file
+if has("autocmd")
+	au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+		\| exe "normal! g'\"" | endif
+endif
