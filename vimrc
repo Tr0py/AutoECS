@@ -8,6 +8,8 @@ set noexpandtab
 set tabstop=4
 set shiftwidth=4
 set nu
+set autoindent
+set cindent
 
 " Enable autowrap for md and C
 autocmd BufRead,BufNewFile *.md setlocal formatoptions+=t
