@@ -25,7 +25,7 @@ set hlsearch
 nnoremap <silent><CR> <Esc>:noh<CR><CR>
 " Display multiple consecutive spaces
 set listchars=tab:\\x20\\x20
-set listchars+=leadmultispace:\\u2423,trail:\\u2423
+set listchars+=trail:\\u2423
 set listchars+=lead:.
 set list
 " test: trailing spaces:       
