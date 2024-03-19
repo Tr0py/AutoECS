@@ -16,6 +16,9 @@ autocmd BufRead,BufNewFile *.md setlocal formatoptions+=t
 autocmd FileType,BufRead,BufNewFile *.c,*.cpp,*.h,*.hpp setlocal tabstop=8
 		\ | setlocal shiftwidth=8
 		\ | setlocal formatoptions+=t
+autocmd FileType,BufRead,BufNewFile *.py setlocal expandtab
+		\ | setlocal shiftwidth=4
+		\ | setlocal tabstop=4
 
 " I like this colorscheme :)
 colorscheme industry
@@ -26,7 +29,7 @@ nnoremap <silent><CR> <Esc>:noh<CR><CR>
 " Display multiple consecutive spaces
 set listchars=tab:\\x20\\x20
 set listchars+=trail:\\u2423
-set listchars+=lead:.
+" set listchars+=lead:.
 set list
 " test: trailing spaces:       
 " test: trailing tabs:			
