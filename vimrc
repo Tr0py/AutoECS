@@ -4,7 +4,7 @@ set textwidth=80
 " Auto wrap comments, and <Cr> auto inserts comment header
 set formatoptions=cr
 " use tab as tab, not space
-set noexpandtab
+set expandtab
 set tabstop=4
 set shiftwidth=4
 set nu
@@ -16,6 +16,7 @@ autocmd BufRead,BufNewFile *.md setlocal formatoptions+=t
 autocmd FileType,BufRead,BufNewFile *.c,*.cpp,*.h,*.hpp setlocal tabstop=8
 		\ | setlocal shiftwidth=8
 		\ | setlocal formatoptions+=t
+		\ | setlocal noexpandtab
 autocmd FileType,BufRead,BufNewFile *.py setlocal expandtab
 		\ | setlocal shiftwidth=4
 		\ | setlocal tabstop=4
@@ -27,10 +28,10 @@ colorscheme industry
 set hlsearch
 nnoremap <silent><CR> <Esc>:noh<CR><CR>
 " Display multiple consecutive spaces
-set listchars=tab:\\x20\\x20
-set listchars+=trail:\\u2423
+" set listchars=tab:\\x20\\x20
+" set listchars+=trail:\\u2423
 " set listchars+=lead:.
-set list
+" set list
 " test: trailing spaces:       
 " test: trailing tabs:			
 	" test: leading tabs
