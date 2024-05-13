@@ -7,7 +7,7 @@ set formatoptions=cr
 set expandtab
 set tabstop=4
 set shiftwidth=4
-set nu
+set nonu
 set autoindent
 set cindent
 
