@@ -20,6 +20,7 @@ autocmd FileType,BufRead,BufNewFile *.c,*.cpp,*.h,*.hpp setlocal tabstop=8
 autocmd FileType,BufRead,BufNewFile *.py setlocal expandtab
 		\ | setlocal shiftwidth=4
 		\ | setlocal tabstop=4
+		\ | setlocal indentexpr=python#GetIndent(v:lnum)
 
 " I like this colorscheme :)
 colorscheme industry
