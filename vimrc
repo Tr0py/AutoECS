@@ -9,7 +9,6 @@ set tabstop=4
 set shiftwidth=4
 set nonu
 set autoindent
-set cindent
 
 " Enable autowrap for md and C
 autocmd BufRead,BufNewFile *.md setlocal formatoptions+=t
@@ -17,6 +16,7 @@ autocmd FileType,BufRead,BufNewFile *.c,*.cpp,*.h,*.hpp setlocal tabstop=8
 		\ | setlocal shiftwidth=8
 		\ | setlocal formatoptions+=t
 		\ | setlocal noexpandtab
+		\ | setlocal cindent
 autocmd FileType,BufRead,BufNewFile *.py setlocal expandtab
 		\ | setlocal shiftwidth=4
 		\ | setlocal tabstop=4
