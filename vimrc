@@ -3,10 +3,6 @@ set encoding=utf-8
 set textwidth=80
 " Auto wrap comments, and <Cr> auto inserts comment header
 set formatoptions=cr
-" use tab as tab, not space
-set expandtab
-set tabstop=4
-set shiftwidth=4
 set nonu
 set autoindent
 
@@ -21,6 +17,9 @@ autocmd FileType,BufRead,BufNewFile *.py setlocal expandtab
 		\ | setlocal shiftwidth=4
 		\ | setlocal tabstop=4
 		\ | setlocal indentexpr=python#GetIndent(v:lnum)
+		\ | setlocal expandtab
+		\ | setlocal tabstop=4
+		\ | setlocal shiftwidth=4
 
 " I like this colorscheme :)
 colorscheme industry
